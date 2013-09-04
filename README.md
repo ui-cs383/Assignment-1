@@ -1,12 +1,30 @@
-Assignment-1
+Usage
 ============
 
-This is a quick skeleton for the assignment one project. This should make it a little easier to work on this without 
-all of us editing a single HTML page.
+The project is broken into separate `sections`. This makes editing a single section much easier than editing on enormous 
+HTML file.  
 
-I will build the dist file when we are ready to turn it in, but to "see" what this looks like you can build it yourself:
+In order to get up and running, you'll need to fork this repository. These instructions assume you have git installed 
+locally, and it's in your path:
+
+    $ cd "some directory"
+    $ git clone http://my-user-name.github.com/Assignment-1
+    $ cd Assignment-1/sections
+    
+`Note: when running git clone make sure the URL you are cloning is your fork, not the main respository.`
+
+This should give you a list of HTML files, broken into sections based on Dr. Jeffrey's requirements. I haven't added a 
+section for extras at this point, because we haven't really discussed what they should be.
+
+Building
+============
 
 `Note: these directions assume you are on a Debian flavor of Linux.`
+
+Sadly, wormulon doesn't have nodejs/npm installed so this won't work on there. If you are running OSX or Windows 
+you can checkout installation instructions for nodejs at http://nodejs.org/. I believe npm is included by default 
+on both platforms.
+
 
 Initial Setup
 -------------
