@@ -1,5 +1,26 @@
 Assignment-1
 ============
 
-I will put together a grunt build so we can make this assignment a little easier to build, and so we aren't all
-working on a huge HTML file. Will try and get something together tonight.
+This is a quick skeleton for the assignment one project. This should make it a little easier to work on this without 
+all of us editing a single HTML page.
+
+I will build the dist file when we are ready to turn it in, but to "see" what this looks like you can build it yourself:
+
+`Note: these directions assume you are a Debian flavor of Linux. Package names may be different on Redhat systems.`
+
+Initial Setup
+-------------
+
+    $ sudo apt-get install nodejs
+    $ sudo apt-get install npm
+    $ sudo npm -g install grunt
+
+Building the Dist
+-------------
+
+    $ cd "directory where you cloned the project"
+    $ npm install
+    $ grunt install
+    $ grunt
+    
+This will result in a new `dist` folder, with a single `index.html` file in it.
