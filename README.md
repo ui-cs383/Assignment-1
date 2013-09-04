@@ -6,7 +6,7 @@ all of us editing a single HTML page.
 
 I will build the dist file when we are ready to turn it in, but to "see" what this looks like you can build it yourself:
 
-`Note: these directions assume you are a Debian flavor of Linux. Package names may be different on Redhat systems.`
+`Note: these directions assume you are on a Debian flavor of Linux.`
 
 Initial Setup
 -------------
