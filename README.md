@@ -19,6 +19,8 @@ section for extras at this point, because we haven't really discussed what they 
 Building
 ============
 
+I will try to keep an updated build at http://ui-cs383.github.io/Assignment-1/.
+
 `Note: these directions assume you are on a Debian flavor of Linux.`
 
 Sadly, wormulon doesn't have nodejs/npm installed so this won't work on there. If you are running OSX or Windows 
