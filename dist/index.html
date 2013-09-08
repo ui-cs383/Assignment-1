@@ -45,7 +45,8 @@
             <div id="pt_authors" class="panel-collapse collapse collapsed">
                 <div class="panel-body">
                     <h5>Sean Harris</h5>
-                    <h5>Emeth</h5>
+                    <h5>Emeth Thompson</h5>
+                    <h5>Justin Hall</h5>
                     <!-- Remove the <! > and dashes to make it show -->
                 </div>
             </div>
@@ -172,7 +173,7 @@
             <div id="tm_authors" class="panel-collapse collapse collapsed">
                 <div class="panel-body">
                     <h5>Justin Hall</h5>
-                    <!-- <h5>Another Name</h5> --> 
+                    <h5>Emeth Thompson</h5>
                     <!-- Remove the <! > and dashes to make it show -->
                 </div>
             </div>
@@ -180,17 +181,16 @@
     </div>
 </div>
 
-<p>Tasks are broken into 3 categories, based on the type of game being played. Each game has a series of tasks, and sub-tasks if they inhereit from a parent. The game types have a numeric <span class="label label-info">label</span> which shows the total number of tasks 
-for a particular game type.</p>
+<p>Tasks are broken into 3 categories, based on the type of game being played. Each game has a series of tasks, and sub-tasks if they inhereit from a parent. The game types have a numeric <span class="label label-info">label</span> which shows the total number of tasks for a particular game type. Each task is uniquely identified via a numeric <span class="badge">badge</span>; the badge keeps a running total of the number of tasks in a particular game.</p>
 
-<p>Tasks with a blue background denote a parent task, and can be clicked on for a list of sub-tasks.</p>
+<p>Subsections with blue backgrounds are not considered tasks, but group similar tasks together.</p>
 
 <ul class="nav nav-tabs" style="margin-bottom:20px">
-    <li class="active"><a href="#tm_star_system_game" data-toggle="tab">Star System Game <span class="label label-info">10</span></a></li>
+    <li class="active"><a href="#tm_star_system_game" data-toggle="tab">Star System Game <span class="label label-info">8</span></a></li>
 
-    <li><a href="#tm_province_game" data-toggle="tab">Province Game</a></li>
+    <li><a href="#tm_province_game" data-toggle="tab">Province Game <span class="label label-info">10</span></a></li>
 
-    <li><a href="#tm_galactic_game" data-toggle="tab">Galactic Game</a></li>
+    <li><a href="#tm_galactic_game" data-toggle="tab">Galactic Game <span class="label label-info">12</span></a></li>
 </ul>
 
 <div class="tab-content">
@@ -201,7 +201,6 @@ for a particular game type.</p>
                     <h4 class="panel-title">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#tm_star_system_combat">
                             <h4 class="list-group-item-heading">Combat</h4>
-                            <p class="list-group-item-text">Interaction between opposing player units.</p>
                         </a>
                     </h4>
                 </div>
@@ -209,11 +208,11 @@ for a particular game type.</p>
                     <div class="panel-body">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <h4 class="list-group-item-heading">Character Combat</h4>
+                                <h4 class="list-group-item-heading"><span class="badge">1</span> Character Combat</h4>
                                 <p class="list-group-item-text">Combat between characters.</p>
                             </li>
                             <li class="list-group-item">
-                                <h4 class="list-group-item-heading">Environ Military Combat</h4>
+                                <h4 class="list-group-item-heading"><span class="badge">2</span> Environ Military Combat</h4>
                                 <p class="list-group-item-text">Plantary combat between militaries.</p>
                             </li>
                         </ul>
@@ -225,7 +224,6 @@ for a particular game type.</p>
                     <h4 class="panel-title">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#tm_star_system_movement">
                             <h4 class="list-group-item-heading">Movement</h4>
-                            <p class="list-group-item-text">Unit movement between points on the game surface.</p>
                         </a>
                     </h4>
                 </div>
@@ -233,11 +231,11 @@ for a particular game type.</p>
                     <div class="panel-body">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <h4 class="list-group-item-heading">Interplanetary Movement</h4>
+                                <h4 class="list-group-item-heading"><span class="badge">3</span> Interplanetary Movement</h4>
                                 <p class="list-group-item-text">Movement between planets.</p>
                             </li>
                             <li class="list-group-item">
-                                <h4 class="list-group-item-heading">Planetary Movement</h4>
+                                <h4 class="list-group-item-heading"><span class="badge">4</span> Planetary Movement</h4>
                                 <p class="list-group-item-text">Movement between enivorns.</p>
                             </li>
                         </ul>
@@ -249,7 +247,6 @@ for a particular game type.</p>
                     <h4 class="panel-title">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#tm_star_system_mission">
                             <h4 class="list-group-item-heading">Missions</h4>
-                            <p class="list-group-item-text">Enivorn-specific actions based on cards.</p>
                         </a>
                     </h4>
                 </div>
@@ -257,12 +254,16 @@ for a particular game type.</p>
                     <div class="panel-body">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <h4 class="list-group-item-heading">Mission Assignment</h4>
+                                <h4 class="list-group-item-heading"><span class="badge">5</span> Mission Assignment</h4>
                                 <p class="list-group-item-text">Assignment of missions to characters.</p>
                             </li>
                             <li class="list-group-item">
-                                <h4 class="list-group-item-heading">Mission Actions</h4>
+                                <h4 class="list-group-item-heading"><span class="badge">6</span> Mission Actions</h4>
                                 <p class="list-group-item-text">Actions user must take to complete mission.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">7</span> Mission Bonus</h4>
+                                <p class="list-group-item-text">Player receives bonuses that can be applied to active missions.</p>
                             </li>
                         </ul>
                     </div>
@@ -271,7 +272,7 @@ for a particular game type.</p>
             <div class="panel panel-default">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <h4 class="list-group-item-heading">Search</h4>
+                        <h4 class="list-group-item-heading"><span class="badge">8</span> Search</h4>
                         <p class="list-group-item-text">Searching for enemy units.</p>
                     </li>
                 </ul>
@@ -280,11 +281,207 @@ for a particular game type.</p>
     </div>
 
     <div class="tab-pane" id="tm_province_game">
-        test
+        <div class="panel-group" id="accordion_province">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_province" href="#tm_province_combat">
+                            <h4 class="list-group-item-heading">Combat</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_province_combat" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">1</span> Character Combat</h4>
+                                <p class="list-group-item-text">Combat between characters.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">2</span> Environ Military Combat</h4>
+                                <p class="list-group-item-text">Plantary combat between militaries.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">3</span> Space Military Combat</h4>
+                                <p class="list-group-item-text">Space combat between militaries.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_province" href="#tm_province_movement">
+                            <h4 class="list-group-item-heading">Movement</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_province_movement" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">4</span> Hyperspace Movement</h4>
+                                <p class="list-group-item-text">Movement between star systems.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">5</span> Interplanetary Movement</h4>
+                                <p class="list-group-item-text">Movement between planets.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">6</span> Planetary Movement</h4>
+                                <p class="list-group-item-text">Movement between enivorns.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_province" href="#tm_province_mission">
+                            <h4 class="list-group-item-heading">Missions</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_province_mission" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">7</span> Mission Assignment</h4>
+                                <p class="list-group-item-text">Assignment of missions to characters.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">8</span> Mission Actions</h4>
+                                <p class="list-group-item-text">Actions user must take to complete mission.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">9</span> Mission Bonus</h4>
+                                <p class="list-group-item-text">Player receives bonuses that can be applied to active missions.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading"><span class="badge">10</span> Search</h4>
+                        <p class="list-group-item-text">Searching for enemy units.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
     </div>
 
     <div class="tab-pane" id="tm_galactic_game">
-        test23
+        <div class="panel-group" id="accordion_galactic">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_galactic" href="#tm_galactic_combat">
+                            <h4 class="list-group-item-heading">Combat</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_galactic_combat" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">1</span> Character Combat</h4>
+                                <p class="list-group-item-text">Combat between characters.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">2</span> Environ Military Combat</h4>
+                                <p class="list-group-item-text">Plantary combat between militaries.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">3</span> Space Military Combat</h4>
+                                <p class="list-group-item-text">Space combat between militaries.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_galactic" href="#tm_galactic_movement">
+                            <h4 class="list-group-item-heading">Movement</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_galactic_movement" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">4</span> Hyperspace Movement</h4>
+                                <p class="list-group-item-text">Movement between star systems.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">5</span> Interplanetary Movement</h4>
+                                <p class="list-group-item-text">Movement between planets.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">6</span> Planetary Movement</h4>
+                                <p class="list-group-item-text">Movement between enivorns.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_galactic" href="#tm_galactic_mission">
+                            <h4 class="list-group-item-heading">Missions</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_galactic_mission" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">7</span> Mission Assignment</h4>
+                                <p class="list-group-item-text">Assignment of missions to characters.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">8</span> Mission Actions</h4>
+                                <p class="list-group-item-text">Actions user must take to complete mission.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><span class="badge">9</span> Mission Bonus</h4>
+                                <p class="list-group-item-text">Player receives bonuses that can be applied to active missions.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading"><span class="badge">10</span> Search</h4>
+                        <p class="list-group-item-text">Searching for enemy units.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading"><span class="badge">11</span> Galacatic Drawing</h4>
+                        <p class="list-group-item-text">Each player draws their own galactic card type.</p>
+                    </li>
+                </ul>
+            </div> 
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading"><span class="badge">12</span> Resource Collection</h4>
+                        <p class="list-group-item-text">Imperial collects taxes, both players expend Force Points</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
     </div>
 </div>
 <h1 id="computeradaptation">Computer Adaptation</h1>
