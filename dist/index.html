@@ -171,12 +171,120 @@
             </div>
             <div id="tm_authors" class="panel-collapse collapse collapsed">
                 <div class="panel-body">
-                    <!-- <h5>Your Name</h5> -->
+                    <h5>Justin Hall</h5>
                     <!-- <h5>Another Name</h5> --> 
                     <!-- Remove the <! > and dashes to make it show -->
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<p>Tasks are broken into 3 categories, based on the type of game being played. Each game has a series of tasks, and sub-tasks if they inhereit from a parent. The game types have a numeric <span class="label label-info">label</span> which shows the total number of tasks 
+for a particular game type.</p>
+
+<p>Tasks with a blue background denote a parent task, and can be clicked on for a list of sub-tasks.</p>
+
+<ul class="nav nav-tabs" style="margin-bottom:20px">
+    <li class="active"><a href="#tm_star_system_game" data-toggle="tab">Star System Game <span class="label label-info">10</span></a></li>
+
+    <li><a href="#tm_province_game" data-toggle="tab">Province Game</a></li>
+
+    <li><a href="#tm_galactic_game" data-toggle="tab">Galactic Game</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane panel active" id="tm_star_system_game">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#tm_star_system_combat">
+                            <h4 class="list-group-item-heading">Combat</h4>
+                            <p class="list-group-item-text">Interaction between opposing player units.</p>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_star_system_combat" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Character Combat</h4>
+                                <p class="list-group-item-text">Combat between characters.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Environ Military Combat</h4>
+                                <p class="list-group-item-text">Plantary combat between militaries.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#tm_star_system_movement">
+                            <h4 class="list-group-item-heading">Movement</h4>
+                            <p class="list-group-item-text">Unit movement between points on the game surface.</p>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_star_system_movement" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Interplanetary Movement</h4>
+                                <p class="list-group-item-text">Movement between planets.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Planetary Movement</h4>
+                                <p class="list-group-item-text">Movement between enivorns.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#tm_star_system_mission">
+                            <h4 class="list-group-item-heading">Missions</h4>
+                            <p class="list-group-item-text">Enivorn-specific actions based on cards.</p>
+                        </a>
+                    </h4>
+                </div>
+                <div id="tm_star_system_mission" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Mission Assignment</h4>
+                                <p class="list-group-item-text">Assignment of missions to characters.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Mission Actions</h4>
+                                <p class="list-group-item-text">Actions user must take to complete mission.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading">Search</h4>
+                        <p class="list-group-item-text">Searching for enemy units.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+
+    <div class="tab-pane" id="tm_province_game">
+        test
+    </div>
+
+    <div class="tab-pane" id="tm_galactic_game">
+        test23
     </div>
 </div>
 <h1 id="computeradaptation">Computer Adaptation</h1>
