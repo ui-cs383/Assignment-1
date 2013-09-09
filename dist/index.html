@@ -484,28 +484,246 @@
         </div>
     </div>
 </div>
-<h1 id="computeradaptation">Computer Adaptation</h1>
+<h1 id="computeradapt">Computer Adaptation</h1>
 
 <div class="row">
     <div class="col-md-3">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#ca_authors">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#cc_authors">
                         Section Contributors
                     </a>
                 </h4>
             </div>
-            <div id="ca_authors" class="panel-collapse collapse collapsed">
+            <div id="cc_authors" class="panel-collapse collapse collapsed">
                 <div class="panel-body">
-                    <!-- <h5>Your Name</h5> --> 
-                    <!-- <h5>Another Name</h5> --> 
-                    <!-- Remove the <! > and dashes to make it show -->
+                    <h5>Jeff Crocker</h5>
+                    <h5>Benjamin Cumber</h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<p>The goal of the computer adaptation should be to free the players of the tedious mathematics and management while also maintaining the charming aspects as well as the intentional design and function. Below is a list of the components, and their proposed adaptations.</p>
+
+<ul class="nav nav-tabs" style="margin-bottom:20px">
+    <li class="active"><a href="#cc_physical_components" data-toggle="tab">Physical Components</a></li>
+
+    <li><a href="#cc_gameplay_mech" data-toggle="tab">Gameplay Mechanics</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane panel active" id="cc_physical_components">
+        <div class="panel-group" id="cc_gameplay">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cc_gameplay" href="#cc_physical_comp_adaptation">
+                            <h4 class="list-group-item-heading">Game Board</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="cc_physical_comp_adaptation" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+			    <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Environ</h4>
+                                <p class="list-group-item-text">Environ are the smallest unit of the gameboard, and thus present a challenge for adaptation as screen size and resolution is an issue. Should mimic board's display of Environ information. Would be nice to be able to re-skin battle setting to match location.</p>
+                            </li>
+			    <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Planets</h4>
+                                <p class="list-group-item-text">Planets also should mimic board design, however there are some places digital adapatation may save us space and thus shrink size of game map. For instance, the loyalty scale takes a lot of space being a physical system, but with the substitution of a color scheme and representing icon could be cut down to one squar. Same can be said for other planet characteristics.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Star Systems</h4>
+                                <p class="list-group-item-text">Star Systems will not need to be graphically changed much, only whatever is needed to suit planetary changes.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Providences</h4>
+                                <p class="list-group-item-text">Provinces will need to be re-done to allow for a nice jigsaw puzzle size and fit of each individual province. This is because due to screen limitations, players will likely only be able to view one province at a time, and navigate between them from a large galaxy map.</p>
+                            </li>
+			    <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Galaxy</h4>
+                                <p class="list-group-item-text">The map of the galaxy will need to be simplified and scaled down to fit, and likely only present pertinent macro information, bringing player's attention to issues and then zooming to smaller scale view to actually do micro management.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cc_gameplay" href="#cc_pieces">
+                            <h4 class="list-group-item-heading">Pieces</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="cc_pieces" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Character Pieces</h4>
+                                <p class="list-group-item-text">Character pieces can be very similar to the table implementation. When viewing the game board you cannot see into the stacks at various planets any details of the individuals, until you pick up the pieces to examine. Mimicing this behavior, we need only to display the quantity and possibly total group strength of the entire stack, and then if player examines, show the exact composition, likely linking to the corresponding cards.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Standard Military</h4>
+                                <p class="list-group-item-text">Standard military will be shown in a similar fashion, although not as much detail be to given.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cc_gameplay" href="#cc_cards">
+                            <h4 class="list-group-item-heading">Cards</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="cc_cards" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Characters and Ships</h4>
+                                <p class="list-group-item-text">A large part of the game's "charm" which I would like to preserve comes across in these cards. For this reason it should be an aim to provide character portraits, item views, etc for all cards just as is done in the board game. These "cards" will be presented to the player as simply the more detailed view of the pieces on the map.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Missions</h4>
+                                <p class="list-group-item-text">Mission related cards on the other hand are not present on the board but rather are resulting information. I picture it being easily adapted as a "news bulletin" of sorts that would pop to the player whenever needed.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Galactic Events</h4>
+                                <p class="list-group-item-text">Galactic events may also be a part of this "Galactic News Bulletin" and any effects remaining for the duration of the turn may stay pinned in upper right of the screen with a countdown to expiration along with effect to remind and inform the player.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="tab-pane" id="cc_gameplay_mech">
+        <div class="panel-group" id="cc_combat">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cc_combat" href="#gameplay_mechanics_combat">
+                            <h4 class="list-group-item-heading">Combat</h4>
+                        </a>
+                    </h4>
+		    <p>Dice rolling for ALL combat will not commense until player dictates, but it will be handled by random generator</p>
+                </div>
+                <div id="gameplay_mechanics_combat" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Character Combat</h4>
+                                <p class="list-group-item-text">Combat between characters can be shown using the detailed "card" like view described previously. Both cards would then participate in combat.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Environ Military Combat</h4>
+                                <p class="list-group-item-text">Military battles should be set in appropriate Environ. Would be nice to have some aesthetic battle representation.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Space Military Combat</h4>
+                                <p class="list-group-item-text">Space combat would have similar adaptation, just with different background imageand units, but easy to implement.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cc_combat" href="#cc_gameplay_mechanics_movement">
+                            <h4 class="list-group-item-heading">Movement</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="cc_gameplay_mechanics_movement" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Hyperspace Movement</h4>
+                                <p class="list-group-item-text">Fancy graphic showing origin and destination must remain on map until hyperspace jump is acknowledged by player. Possibly even special movement routine to make it exciting.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Interplanetary Movement</h4>
+                                <p class="list-group-item-text">Movement between planets will be shown by moving unit stacks and leaving trail along path so as to leave more information and context for player.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Planetary Movement</h4>
+                                <p class="list-group-item-text">Movement between enivorns might be tricky at the scale of the map to show, so as with other movement there need to be some sort of special icon or maybe news bulletin to alert the player who did not make the move that such a change has happened.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cc_combat" href="#cc_gameplay_mechanics_mission">
+                            <h4 class="list-group-item-heading">Missions</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="cc_gameplay_mechanics_mission" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Mission Assignment</h4>
+                                <p class="list-group-item-text">There will be a mission manager window which will be brought up at the proper phases, displaying all active characters, their assigned missions, progress, etc.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Mission Actions</h4>
+                                <p class="list-group-item-text">Actions will also be taken at the "mission manager" window.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Mission Bonus</h4>
+                                <p class="list-group-item-text">Bonuses that can be applied to active missions will present the mission manager to the user and prompt which assignment to assign the bonus.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#cc_combat" href="#cc_gameplay_mechanics_systems">
+                            <h4 class="list-group-item-heading">Systems</h4>
+                        </a>
+                    </h4>
+                </div>
+                <div id="cc_gameplay_mechanics_systems" class="panel-collapse collapse collapsed">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Resource Management</h4>
+                                <p class="list-group-item-text">At the proper phase, both players will be given financial reports and prompted as to what policies they would like to put in place for future.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Turn 'State'</h4>
+                                <p class="list-group-item-text">Process which lists and indicates current turn, phase, state, etc should be present in corner and generally available for player to reference.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading">Search</h4>
+                        <p class="list-group-item-text">Searching will be a computation phase for the game, no need to present the players with all the failed searches, but rather will prompt a Galactic News Bulletin and consequences will be applied.</p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+</div>
+
 <h1 id="semesterschedule">Semester Schedule</h1>
 
 <div class="row">
